@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body> <!--Caixa Maior que engloba todo o conteúdo-->
+    
+    <header>
+        <img src="logo.svg" class="logo" alt="Logo Alura">
+    </header>
+
+    <main>
+        <section class="caixa-entrada"> <!--1ª Caixa com os elementos para a entrada de texto-->
+            <textarea class="entrada" cols="50" rows="10" id="texto" placeholder="Digite seu texto..."></textarea>
+            <div class="caixa">
+                <p> <img src="exclamacao.png" class="icone" alt="Ícone de exclamação"> Apenas letras minúsculas e sem acento.</p>    
+                <button class="botao-1" onclick="botaoCripto()">Criptografar</button>
+                <button class="botao-2" onclick="botaoDescripto()">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="caixa-saida" id="imagem"> <!--2ª Caixa com texto de saída e botão copiar-->
+            <textarea class="saida" cols="20" rows="10" readonly="true"></textarea>
+            <button class="botao-3" onclick="botaoCopiar()">Copiar</button>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy Copyright Renata Alves 2023 - Challenge Alura: Decodificador de texto - T4 ONE</p>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script> 
+
+</body>
+
+</html>
