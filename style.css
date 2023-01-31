@@ -80,7 +80,7 @@ button {
     justify-self: flex-start;  
     color: #0A3871;
     background-color: #FFFFFF;
-    background-image: url("saida.svg");
+    background-image: url("./imagens/saida.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 80%;
